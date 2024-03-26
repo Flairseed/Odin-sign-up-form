@@ -143,3 +143,17 @@ form button {
   margin-top: 10rem;
   margin-bottom: 4rem
 }
+
+#password.password-incorrect + span::after {
+  content: "*Passwords do not match";
+  color: red;
+  font-size: 0.7rem;
+}
+
+.password-incorrect {
+  border-color: red;
+}
+
+.password-incorrect:focus {
+  border-color: red;
+}

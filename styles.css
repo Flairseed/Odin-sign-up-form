@@ -1,7 +1,13 @@
+@font-face {
+  font-family: Norse;
+  src: url("./fonts/Norse-Bold.otf");
+}
+
 body {
   display: flex;
   margin: 0;
   background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
 }
 
 #picture-div {
@@ -12,8 +18,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 35%;
+  width: 65%;
   height: 100vh;
+  font-family: Norse;
+}
+
+#picture-div p {
+  font-family: "Roboto", sans-serif;
 }
 
 #picture-div div {
@@ -65,11 +76,18 @@ body {
 
 .sign-up h2{
   margin-bottom: 0;
+  color: rgb(70, 70, 70)
 }
 
 .sign-up div div {
   display: flex;
   flex-direction: column;
+}
+
+.sign-up div div label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(83, 83, 83);
 }
 
 input {
@@ -94,6 +112,7 @@ input:invalid {
 #email:invalid + span::after {
   content: "*Invalid email";
   color: red;
+  font-size: 0.7rem;
 }
 
 form button {
@@ -116,6 +135,7 @@ form button {
 #form-div p a{
   color: rgb(85, 104, 54);
   text-decoration: none;
+  font-weight: bold;
 }
 
 #form-div > h2 {
